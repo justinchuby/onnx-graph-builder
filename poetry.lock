@@ -183,6 +183,19 @@ python-versions = ">=3.7"
 flake8 = ">=3.0.0"
 
 [[package]]
+name = "flake8-black"
+version = "0.3.3"
+description = "flake8 plugin to call black as a code style validator"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+black = ">=22.1.0"
+flake8 = ">=3.0.0"
+tomli = "*"
+
+[[package]]
 name = "flake8-bugbear"
 version = "22.9.11"
 description = "A plugin for flake8 finding likely bugs and design problems in your program. Contains warnings that don't belong in pyflakes and pycodestyle."
@@ -672,7 +685,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "b7cf2585739f7ee02518ae3d87d7d387ddf06149302075132c5a5b81ef4bf1f3"
+content-hash = "5aceb8509c5f8e7c3d9b4b11e0717b6dca0ec13ab0005158af842a9f56a27850"
 
 [metadata.files]
 ast-decompiler = [
@@ -755,6 +768,10 @@ flake8 = [
 flake8-assertive = [
     {file = "flake8-assertive-2.1.0.tar.gz", hash = "sha256:72a333fefe1af1f8d46359f4d083f8a8d42d7edb9db84406ce8de17bcffbbd10"},
     {file = "flake8_assertive-2.1.0-py3-none-any.whl", hash = "sha256:dc0c561010b2c00f7314f7fbf3b3de302efb24154316deb338d07e083fa30b26"},
+]
+flake8-black = [
+    {file = "flake8-black-0.3.3.tar.gz", hash = "sha256:8211f5e20e954cb57c709acccf2f3281ce27016d4c4b989c3e51f878bb7ce12a"},
+    {file = "flake8_black-0.3.3-py3-none-any.whl", hash = "sha256:7d667d0059fd1aa468de1669d77cc934b7f1feeac258d57bdae69a8e73c4cd90"},
 ]
 flake8-bugbear = [
     {file = "flake8-bugbear-22.9.11.tar.gz", hash = "sha256:39236c0e97160d1ab05d9f87422173d16e925a6220b3635bfc4aee766bf8194a"},
